@@ -156,7 +156,7 @@ robot --variable COMPONENT:api/api_get/tests/api_get_tests.robot --variable TAG:
 
 Access [actions](https://github.com/hyggedigitaltecnologia/api-tests-hanzo/actions) and follow the steps:
 
-1. Click on "Manual Run WEB Tests".
+1. Click on "Manual Run API Tests".
 
 ![alt text](images/image-6.png)
 
@@ -164,7 +164,7 @@ Access [actions](https://github.com/hyggedigitaltecnologia/api-tests-hanzo/actio
 
 ![alt text](images/image-7.png)
 
-3. Fill in the fields so that:
+3. Fill in the fields so that and click "Run workflow":
 
 ```bash
 What is the COMPONENT to be executed?
@@ -178,21 +178,14 @@ What is the TAG to be executed?
 
 ![alt text](images/image-8.png)
 
-4. Click "Run workflow".
-
-![alt text](images/image-9.png)
-
-5. Wait for execution.
+4. Wait for execution.
 
 ![alt text](images/image-10.png)
 
-6. Access the run.
+5. Access the run.
 
 ![alt text](images/image-11.png)
 
-7. Access the downloadable report and execution data.
+6. Access the downloadable report and execution data.
 
 ![alt text](images/image-12.png)
-
-# Project Execution
-
