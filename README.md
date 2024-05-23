@@ -1,6 +1,79 @@
-# WEB Test Automation Project - Hanzo
+# API Test Automation Project - Hanzo
 
 This test automation project was developed to validate the endpoint https://jsonplaceholder.typicode.com/users. Uses Robotframework with Python and RequestsLibrary.
+
+# Testing Techniques and Objectives
+
+In this set of automated tests for the API endpoint https://jsonplaceholder.typicode.com/users, we employ various testing techniques to validate the structure and data returned by the API. Each test scenario addresses a specific aspect of the JSON response, ensuring that the data conforms to predefined expectations. Below, I outline the techniques used and the objectives of each test scenario.
+
+## Scenario: JSON Structure Validation
+
+### Description:
+
+- GIVEN that I make a GET request to "/users"
+- THEN I validate the JSON structure correctly
+
+### Techniques and Objectives:
+
+- JSON Structure Validation:
+    - Objective: Ensure that the JSON response contains all expected fields for each user.
+- Technique: Verify that each object in the response array contains the mandatory keys (id, name, username, email, address, phone, website, company). This ensures that the data structure is as expected and no essential fields are missing.
+
+## Scenario: Validation of Specific Values for a User
+
+### Description:
+
+- GIVEN that I make a GET request to "/users"
+- THEN the first user must have the name "Leanne Graham"
+
+### Techniques and Objectives:
+
+- Validation of Specific Values:
+    - Objective: Confirm that specific data for a user is correct.
+- Technique: Verify that the first user in the JSON response has the name field with the value "Leanne Graham". This type of test is useful for validating static or expected data that should be present in the response, ensuring that the information returned by the API is correct and consistent.
+
+## Scenario: List Size Validation
+
+### Description:
+
+- GIVEN that I make a GET request to "/users"
+- THEN the user list must contain 10 users
+
+### Techniques and Objectives:
+
+- List Size Validation:
+    - Objective: Ensure that the number of returned data items is correct.
+- Technique: Verify that the response array contains exactly 10 user objects. This is important to ensure that the API returns the correct number of records and that there are no missing or excessive data.
+
+## Summary of Testing Techniques Used
+
+### JSON Structure Validation:
+
+- Checks for the presence of specific keys in each object of the response array.
+
+### Validation of Specific Values:
+
+- Confirms that certain fields in specific objects contain expected values.
+
+### List Size Validation:
+
+- Ensures that the number of objects in the response array is correct.
+
+## General Objectives of the Tests
+
+### Data Conformity:
+
+- Ensure that the structure and data returned by the API conform to expectations.
+
+### API Reliability:
+
+- Ensure that the API consistently returns correct and complete data, which is crucial for the integrity of systems relying on this API.
+
+### Anomaly Detection:
+
+- Identify any discrepancies or errors in the data returned by the API, such as missing fields, incorrect data types, or unexpected values.
+
+By applying these testing techniques, we can increase confidence in the robustness and reliability of the API, providing a solid foundation for developing applications that depend on this data.
 
 # Project structure
 
