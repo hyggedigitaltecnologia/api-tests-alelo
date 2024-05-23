@@ -7,3 +7,4 @@ robotframework-screencaplibrary
 robotframework-selenium2library
 robotframework-seleniumlibrary
 robotframework-SikuliLibrary
+robotframework-requests
