@@ -1,0 +1,9 @@
+allure-python-commons
+allure-robotframework
+robotframework
+robotframework-browser
+robotframework-faker
+robotframework-screencaplibrary
+robotframework-selenium2library
+robotframework-seleniumlibrary
+robotframework-SikuliLibrary
